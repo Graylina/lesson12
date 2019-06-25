@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form accept-charset="UTF-8" action="http://nickblack.pro/send.php" method="post" name="login" id="form1">
+        <fieldset form="form1" name="contacts">
+            <legend>Контактная форма</legend>
+            <P>
+                <label for="fname">Имя<em>*</em>
+                <input type="text" required id="fname"><label>
+            </P>
+            <P>
+                <label for="sname">Фамилия
+                <input type="text" id="sname"><label>
+            </P>
+            <P>
+                <label for="age">Возраст
+                <input type="number" min="1" max="100" step="1" id="age"><label>
+            </P>
+            <P>
+                <label for="mail">E-mail
+                <input type="mail" id="mail"><label>
+            </P>
+            <P>
+                <label for="bday">Дата рождения
+                <input type="date" name="bday"><label>
+            </P>
+            <P>
+                <label for="phone">Телефон<em>*</em>
+                <input type="text" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required name="phone"><label>
+            </P>
+            <P>
+                <label for="mymail">E-mail получателя<em>*</em>
+                <input type="mail" required readonly name="mymail" value="uskanli21@gmail.com"><label>
+            </P>
+        </fieldset>
+        <input type="submit" value="Отослать">
+    </form>
+</body>
+</html>
